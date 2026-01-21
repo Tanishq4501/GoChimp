@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Subject}}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+        }
+        .header {
+            padding: 32px 40px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        .header h1 {
+            color: #24292e;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 32px 40px;
+        }
+        .content p {
+            color: #586069;
+            font-size: 16px;
+            margin: 16px 0;
+        }
+        .message-box {
+            background-color: #f6f8fa;
+            border-left: 3px solid #0366d6;
+            padding: 16px 20px;
+            margin: 24px 0;
+        }
+        .message-box p {
+            margin: 0;
+            color: #24292e;
+        }
+        .footer {
+            padding: 24px 40px;
+            border-top: 1px solid #e1e4e8;
+            color: #6a737d;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hello {{.Name}},</h1>
+        </div>
+        <div class="content">
+            <div class="message-box">
+                <p>{{.Message}}</p>
+            </div>
+            <p>We hope you enjoy our email campaign and find great value in what we have to offer.</p>
+            <p>Thank you for being part of our community.</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,</p>
+            <p>The Team</p>
+        </div>
+    </div>
+</body>
+</html>
